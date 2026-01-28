@@ -64,7 +64,6 @@ p {
 @media (max-width: 768px) {
   .menu {
     top: auto;
-    bottom: 14px;
     padding: 8px 16px;
   }
 
