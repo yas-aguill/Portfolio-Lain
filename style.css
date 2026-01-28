@@ -83,6 +83,7 @@ p {
 }
 #about {
   scroll-margin-top: 120px;
+  min-height: 100vh;
 }
 span {
   font-family: 'Times New Roman', Times, serif;
