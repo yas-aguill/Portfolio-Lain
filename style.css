@@ -65,14 +65,18 @@ p {
   .menu {
     top: auto;
     bottom: 14px;
-    padding: 8px 18px;
+    padding: 8px 16px;
   }
 
   .menu ul {
     gap: 16px;
   }
 }
-
+@media (max-width: 768px) {
+  menu a {
+    font-size: 0.9rem;
+  }
+}
 /* seções */
 .section {
     padding: 80px 20px;
@@ -105,7 +109,11 @@ span {
   font-size: clamp(1.2rem, 3.2vw, 2.2rem);
   line-height: 1.2;
 }
-
+@media (max-width: 768px) {
+  .hero span {
+    font-size: clamp(6rem, 10vw, 8rem);
+  }
+}
 .about {
   text-align: right;
   max-width: 550px;
@@ -117,14 +125,10 @@ span {
 }
 @media (max-width: 768px) {
   .about {
-    text-align: left;
+    text-align: center;
   }
 }
-@media (max-width: 480px) {
-  .about {
-    padding-left: 12px;
-  }
-}
+
 /* portfolio cards */
 
 .portfolio {
