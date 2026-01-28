@@ -68,12 +68,12 @@ p {
   }
 
   .menu ul {
-    gap: 16px;
+    gap: 10px;
   }
 }
 @media (max-width: 768px) {
   menu a {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 }
 /* seções */
@@ -126,7 +126,7 @@ span {
 @media (max-width: 768px) {
   .about {
     text-align: center;
-    margin: auto;
+    margin-left: none;
   }
 }
 
