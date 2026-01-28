@@ -299,3 +299,6 @@ footer p {
   padding: 10px;
   color: #535353;
 }
+footer a:hover {
+  color:#949494;
+}
