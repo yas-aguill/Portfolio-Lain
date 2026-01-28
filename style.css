@@ -63,7 +63,7 @@ p {
 }
 @media (max-width: 768px) {
   .menu {
-    top: auto;
+    top: 12px;
     padding: 8px 16px;
   }
 
@@ -73,7 +73,7 @@ p {
 }
 @media (max-width: 768px) {
   menu a {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }
 /* seções */
@@ -121,11 +121,12 @@ span {
   padding-right: 90px;
 }
 .about p {
-  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-size: clamp(1rem, 2vw, 1.3rem);
 }
 @media (max-width: 768px) {
   .about {
     text-align: center;
+    margin: auto;
   }
 }
 
