@@ -15,13 +15,15 @@ html, body {
 /* fontes e cores */
 body {
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: #ffffff;
     line-height: 1.6;
     position:relative;
     z-index: 1;
 }
-
+p {
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+}
 /* menu */
 .menu {
   position: fixed;
@@ -48,7 +50,7 @@ body {
 .menu a {
   text-decoration: none;
   color: #949494;
-  font-size: clamp(0.85rem, 1.2vw, 1.05rem);
+  font-size: clamp(0.95rem, 1.3vw, 1.1rem);
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -82,7 +84,7 @@ body {
 span {
   font-family: 'Times New Roman', Times, serif;
   font-family: 'Times New Roman', Times, serif;
-  font-size: clamp(2.2rem, 6vw, 4.3rem);
+  font-size: clamp(2.4rem, 6vw, 4.3rem);
   font-weight: normal;
 }
 .hero {
@@ -96,21 +98,33 @@ span {
 }
 .hero span {
     font-family: 'Times New Roman', Times, serif;
-    font-size: clamp(2.5rem, 7vw, 4rem);
+    font-size: clamp(6rem, 10vw, 8rem);
     font-weight: normal;
 }
 .hero .creator p {
-  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  font-size: clamp(1.2rem, 3.2vw, 2.2rem);
   line-height: 1.2;
 }
 
 .about {
   text-align: right;
-  max-width: 600px;
+  max-width: 550px;
   margin-left: auto;
   padding-right: 90px;
 }
-
+.about p {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+}
+@media (max-width: 768px) {
+  .about {
+    text-align: left;
+  }
+}
+@media (max-width: 480px) {
+  .about {
+    padding-left: 12px;
+  }
+}
 /* portfolio cards */
 
 .portfolio {
@@ -122,6 +136,7 @@ span {
 }
 .vid {
   font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(1rem, 2vw, 1.6rem);
   font-weight: normal;
 }
 .video-card {
@@ -247,6 +262,9 @@ a:visited {
 .cont span {
   font-size: clamp(1.2rem, 3vw, 2rem);
 }
+.cont p {
+  font-size: clamp(1.2rem, 2.2vw, 1.2rem);
+} 
 .cont a:hover {
   color:#949494;
 }
