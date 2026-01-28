@@ -1,0 +1,278 @@
+/* reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: rgb(10, 10, 10);
+  scroll-behavior: smooth;
+}
+
+/* fontes e cores */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.6;
+    position:relative;
+    z-index: 1;
+}
+
+/* menu */
+.menu {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 999px;
+  padding: 12px 28px;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #949494;
+  font-size: clamp(0.85rem, 1.2vw, 1.05rem);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: rgb(148, 148, 148);
+}
+.menu a.active {
+  color: white;
+}
+@media (max-width: 768px) {
+  .menu {
+    top: auto;
+    bottom: 14px;
+    padding: 8px 18px;
+  }
+
+  .menu ul {
+    gap: 16px;
+  }
+}
+
+/* seções */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+#about {
+  scroll-margin-top: 120px;
+}
+span {
+  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(2.2rem, 6vw, 4.3rem);
+  font-weight: normal;
+}
+.hero {
+    font-family: 'Times New Roman', Times, serif;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+}
+.hero span {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(2.5rem, 7vw, 4rem);
+    font-weight: normal;
+}
+.hero .creator p {
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  line-height: 1.2;
+}
+
+.about {
+  text-align: right;
+  max-width: 600px;
+  margin-left: auto;
+  padding-right: 90px;
+}
+
+/* portfolio cards */
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  margin-top: 60px;
+}
+.vid {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+.video-card {
+  position: relative;
+  width: 820px;       /* controle real do tamanho */
+  max-width: 88vw;    /* impede encostar nas bordas */
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 14px;
+  overflow: visible;
+  transition: transform 0.4s ease;
+}
+
+/* brilho */
+.video-card::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.35),
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.35)
+  );
+  filter: blur(18px);
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.video-card iframe {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 14px;
+}
+
+.video-card:hover {
+  transform: scale(1.015);
+}
+
+.video-card:hover::before {
+  filter: blur(10px);
+  opacity: 1;
+}
+
+.shorts-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.short-card {
+  width: 260px;
+  aspect-ratio: 9 / 16;
+  border-radius: 28px;
+  background: black;
+  position: relative;
+  overflow: visible; 
+}
+
+/* glow suave em volta */
+.short-card::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 36px;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.35),
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.35)
+  );
+  filter: blur(18px);
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.short-card iframe {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 28px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+ .contact-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.contact-left {
+  max-width: 45%;
+  text-align: center;
+}
+.contact span {
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 0.5;
+}
+.cont {
+  max-width: 45%;
+  text-align: left;
+}
+
+.cont span {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+}
+.cont a:hover {
+  color:#949494;
+}
+
+@media (max-width: 768px) {
+  .contact-layout {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact-left,
+  .cont {
+    max-width: 100%;
+  }
+}
+
+footer {
+  background: #0e0e0e;
+  padding: 1px 1px;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+footer p {
+  font-size: 12px;
+  text-align: left;
+  padding: 10px;
+  color: #535353;
+}
