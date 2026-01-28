@@ -106,7 +106,7 @@ span {
     font-weight: normal;
 }
 .hero .creator p {
-  font-size: clamp(1.2rem, 3.2vw, 2.2rem);
+  font-size: clamp(1rem, 3.2vw, 2.2rem);
   line-height: 1.2;
 }
 @media (max-width: 768px) {
