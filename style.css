@@ -20,6 +20,7 @@ body {
     line-height: 1.6;
     position:relative;
     z-index: 1;
+    overflow-x: hidden;
 }
 p {
   font-size: clamp(1rem, 1.2vw, 1.15rem);
@@ -78,11 +79,11 @@ p {
 }
 /* seções */
 .section {
-    padding: 120px 20px;
+    padding: 120px 120px;
     text-align: center;
 }
 #about {
-  scroll-margin-top: 120px;
+  scroll-margin-top: 60px;
   min-height: auto;
 }
 span {
@@ -91,6 +92,7 @@ span {
   font-size: clamp(2.4rem, 6vw, 4.3rem);
   font-weight: normal;
 }
+
 .hero {
     font-family: 'Times New Roman', Times, serif;
     height: 80vh;
@@ -143,6 +145,13 @@ span {
     font-size: 1.05rem;
   }
 }
+@media (min-width: 1600px) {
+  .site-scale {
+    transform: scale(1.25);
+    transform-origin: top center;
+  }
+}
+
 @media (min-width: 1600px) {
 
   .about {
