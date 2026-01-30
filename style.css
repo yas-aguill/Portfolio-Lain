@@ -157,7 +157,7 @@ span {
 
 @media (min-width: 1600px) {
   .about {
-    max-width: 900px;
+    max-width: 800px;
     margin-right: 0;
   }
 
