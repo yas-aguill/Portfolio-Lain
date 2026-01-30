@@ -146,12 +146,12 @@ span {
     font-size: 1.05rem;
   }
 }
-@media (min-width: 1600px) {
+/* @media (min-width: 1600px) {
   .site-scale {
     transform: scale(1.25);
     transform-origin: top center;
-  }
-}
+  } 
+}*/
 
 @media (min-width: 1600px) {
 
