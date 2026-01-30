@@ -163,19 +163,15 @@ span {
     font-size: clamp(3.4rem, 4vw, 4.8rem);
   }
 
-  #about p {
+  /* #about p {
     font-size: 1.4rem;
     max-width: 620px;
     margin-left: auto;
-  }
+  } */
 }
 @media (min-width: 1600px) {
   body {
     font-size: 1.6rem;
-  }
-
-  .about {
-    max-width: 720px;
   }
 
   .video-card {
