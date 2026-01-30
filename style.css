@@ -155,12 +155,12 @@ span {
   flex: 1;
 }
 
-/* @media (min-width: 1600px) {
+@media (min-width: 1600px) {
   .site-scale {
     transform: scale(1.25);
     transform-origin: top center;
   } 
-}*/
+}
 
 @media (min-width: 1600px) {
   .about {
@@ -177,7 +177,7 @@ span {
     max-width: 620px;
     margin-left: auto;
   } */
-}
+
 @media (min-width: 1600px) {
   body {
     font-size: 1.6rem;
