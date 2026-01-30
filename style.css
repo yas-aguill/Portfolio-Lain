@@ -180,6 +180,28 @@ span {
     width: 960px;
   }
 }
+@media (min-width: 1600px) {
+  .section {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (min-width: 1600px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1600px) {
+  .hero {
+    min-height: 100vh;
+  }
+}
 
 /* portfolio cards */
 
